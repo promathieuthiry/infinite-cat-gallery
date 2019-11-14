@@ -16,21 +16,14 @@ class FetchImage extends Component {
     componentDidMount() {
         this.getImage()
     }
+
     
     render() {
 
         // Fetch automatically on scroll when almost at the bottom
-        window.onscroll = debounce(() => {
-            if (
-              window.innerHeight + document.documentElement.scrollTop
-              === document.documentElement.offsetHeight
-            ) {
-                this.getImage()
-            }
-          }, 200);
-
+        window.addEventListener('scroll', this.fetchOnScroll)
         const { data, isLoading } = this.state
-  
+        const URL= null
         return (
             <div className="wrapper">
                <div className="img-area">
@@ -40,8 +33,8 @@ class FetchImage extends Component {
                   <img className="image" src={item.url} alt="" key={item.id} />   
                   </Animated>
                   <div class="middle">
-                 <a className="text" href="https://wa.me/?text=urlencodedtext">
-                 <FontAwesomeIcon icon={faWhatsapp} /> Share on Whatsapp</a>
+                 <button className="text" onClick={() => this.sendToWhatsapp(item.url)}>
+                 <FontAwesomeIcon icon={faWhatsapp} /> Share on Whatsapp</button>
                  </div>
                   </div>
                   )}
@@ -72,6 +65,23 @@ class FetchImage extends Component {
     return  ((element.height / element.width) > 0.5) 
     && ((element.height / element.width) < 0.7)
     }
+
+    fetchOnScroll = () => {
+        document.title = window.scroll
+        window.onscroll = debounce(() => {
+            if (
+              window.innerHeight + document.documentElement.scrollTop
+              === document.documentElement.offsetHeight
+            ) {
+                this.getImage()
+            }
+          }, 200);
+    }
+    
+    sendToWhatsapp =(link) => {
+        window.location = 'https://wa.me/?text='+encodeURIComponent(link);
+    }
+
 }
 
     
