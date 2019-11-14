@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/infinite-cat-gallery/static/css/main.315cd9dc.chunk.css",
+    "main.js": "/infinite-cat-gallery/static/js/main.788f80b6.chunk.js",
+    "main.js.map": "/infinite-cat-gallery/static/js/main.788f80b6.chunk.js.map",
+    "runtime-main.js": "/infinite-cat-gallery/static/js/runtime-main.e0941c14.js",
+    "runtime-main.js.map": "/infinite-cat-gallery/static/js/runtime-main.e0941c14.js.map",
+    "static/js/2.b74172eb.chunk.js": "/infinite-cat-gallery/static/js/2.b74172eb.chunk.js",
+    "static/js/2.b74172eb.chunk.js.map": "/infinite-cat-gallery/static/js/2.b74172eb.chunk.js.map",
+    "index.html": "/infinite-cat-gallery/index.html",
+    "precache-manifest.94821ac710b0f7f26cfc30b95a621f1f.js": "/infinite-cat-gallery/precache-manifest.94821ac710b0f7f26cfc30b95a621f1f.js",
+    "service-worker.js": "/infinite-cat-gallery/service-worker.js",
+    "static/css/main.315cd9dc.chunk.css.map": "/infinite-cat-gallery/static/css/main.315cd9dc.chunk.css.map",
+    "static/media/header.css": "/infinite-cat-gallery/static/media/catcover.e3252e7f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0941c14.js",
+    "static/js/2.b74172eb.chunk.js",
+    "static/css/main.315cd9dc.chunk.css",
+    "static/js/main.788f80b6.chunk.js"
+  ]
+}
