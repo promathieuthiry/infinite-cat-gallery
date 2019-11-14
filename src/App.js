@@ -1,15 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom"
+
 import './App.css';
 import FetchImage from './components/fetchImage';
-import Header from './components/header';
+import Favourite from './components/favourite';
 
 require('dotenv').config()
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <FetchImage />
+      <Router>
+      <Route exact path='/' component={FetchImage} />
+      <Route exact path='/favourite' component={Favourite} />
+  </Router>
     </div>
   );
 }

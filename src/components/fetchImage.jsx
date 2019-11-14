@@ -1,45 +1,45 @@
 import React, { Component } from 'react'
-import debounce from "lodash.debounce";
 import {Animated} from "react-animated-css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faHeart } from "@fortawesome/free-solid-svg-icons"
 
 import { configHeader } from '../helpers/header'
+import Header from './header'
 import './fetchImage.css'
 
 class FetchImage extends Component {
 
     state = {
         data: [],
-        isLoading: false
+        isLoading: false,
     }
     componentDidMount() {
         this.getImage()
+        window.addEventListener('scroll', this.fetchOnScroll)
     }
 
-    
     render() {
 
-        // Fetch automatically on scroll when almost at the bottom
-        window.addEventListener('scroll', this.fetchOnScroll)
         const { data, isLoading } = this.state
-        const URL= null
         return (
-            <div className="wrapper">
-               <div className="img-area">
+            <div>
+            <Header />
+            <div className="wrapper" >
+               <div className="img-area" >
                 {data.filter(this.filterLandscapeImage).map(item => 
                <div className="item">
                    <Animated animationInDuration="3000" >
                   <img className="image" src={item.url} alt="" key={item.id} />   
                   </Animated>
                   <div class="middle">
-                 <button className="text" onClick={() => this.sendToWhatsapp(item.url)}>
-                 <FontAwesomeIcon icon={faWhatsapp} /> Share on Whatsapp</button>
+                 <button className="text" onClick={() => this.saveFavourite(item.id, item.url)}>
+                 <FontAwesomeIcon icon={faHeart} /> Add favourites</button>
                  </div>
                   </div>
                   )}
                </div>
                {isLoading && <p>Loading</p>}
+            </div>
             </div>
         )
     }
@@ -66,21 +66,16 @@ class FetchImage extends Component {
     && ((element.height / element.width) < 0.7)
     }
 
+    // Fetch at the bottom of the page
     fetchOnScroll = () => {
-        document.title = window.scroll
-        window.onscroll = debounce(() => {
-            if (
-              window.innerHeight + document.documentElement.scrollTop
-              === document.documentElement.offsetHeight
-            ) {
-                this.getImage()
-            }
-          }, 200);
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        this.getImage()
+      }
     }
     
-    sendToWhatsapp =(link) => {
-        window.location = 'https://wa.me/?text='+encodeURIComponent(link);
-    }
+   saveFavourite = (id, url) => {
+        localStorage.setItem(id, url);
+   }
 
 }
 
