@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://promathieuthiry.github.io/infinite-cat-gallery/precache-manifest.3b9087560374478eef784671243d5332.js"
+  "https://promathieuthiry.github.io/infinite-cat-gallery/precache-manifest.28eb94361e224813965413afdf4cb5b5.js"
 );
 
 self.addEventListener('message', (event) => {
