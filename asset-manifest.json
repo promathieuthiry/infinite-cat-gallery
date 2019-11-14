@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "https://promathieuthiry.github.io/infinite-cat-gallery/static/css/main.80991f74.chunk.css",
-    "main.js": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.db610b38.chunk.js",
-    "main.js.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.db610b38.chunk.js.map",
+    "main.js": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.e0da786f.chunk.js",
+    "main.js.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.e0da786f.chunk.js.map",
     "runtime-main.js": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/runtime-main.43af28fa.js",
     "runtime-main.js.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/runtime-main.43af28fa.js.map",
-    "static/js/2.a891a9d5.chunk.js": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.a891a9d5.chunk.js",
-    "static/js/2.a891a9d5.chunk.js.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.a891a9d5.chunk.js.map",
+    "static/js/2.ff24fa87.chunk.js": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.ff24fa87.chunk.js",
+    "static/js/2.ff24fa87.chunk.js.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.ff24fa87.chunk.js.map",
     "index.html": "https://promathieuthiry.github.io/infinite-cat-gallery/index.html",
-    "precache-manifest.28eb94361e224813965413afdf4cb5b5.js": "https://promathieuthiry.github.io/infinite-cat-gallery/precache-manifest.28eb94361e224813965413afdf4cb5b5.js",
+    "precache-manifest.d7cb12dd9f01cba0f6baf87b393d4a72.js": "https://promathieuthiry.github.io/infinite-cat-gallery/precache-manifest.d7cb12dd9f01cba0f6baf87b393d4a72.js",
     "service-worker.js": "https://promathieuthiry.github.io/infinite-cat-gallery/service-worker.js",
     "static/css/main.80991f74.chunk.css.map": "https://promathieuthiry.github.io/infinite-cat-gallery/static/css/main.80991f74.chunk.css.map",
     "static/media/header.css": "https://promathieuthiry.github.io/infinite-cat-gallery/static/media/catcover.e3252e7f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.43af28fa.js",
-    "static/js/2.a891a9d5.chunk.js",
+    "static/js/2.ff24fa87.chunk.js",
     "static/css/main.80991f74.chunk.css",
-    "static/js/main.db610b38.chunk.js"
+    "static/js/main.e0da786f.chunk.js"
   ]
 }
