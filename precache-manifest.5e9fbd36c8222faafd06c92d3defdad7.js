@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b04ce973094121ebc8e68c3744676df",
+    "revision": "263737738c3c22478cdd64ccecefa5be",
     "url": "https://promathieuthiry.github.io/infinite-cat-gallery/index.html"
   },
   {
-    "revision": "bb2dd7dbe20ea14677b2",
+    "revision": "31fa4c2a7a3a6d2198c6",
     "url": "https://promathieuthiry.github.io/infinite-cat-gallery/static/css/main.80991f74.chunk.css"
   },
   {
-    "revision": "cea0d01b956ac52ebc4e",
-    "url": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.ff24fa87.chunk.js"
+    "revision": "40a353e45517ec8ea41a",
+    "url": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/2.987d9cae.chunk.js"
   },
   {
-    "revision": "bb2dd7dbe20ea14677b2",
-    "url": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.c16ec295.chunk.js"
+    "revision": "31fa4c2a7a3a6d2198c6",
+    "url": "https://promathieuthiry.github.io/infinite-cat-gallery/static/js/main.80545402.chunk.js"
   },
   {
     "revision": "338676e85e00e0e337fb",
