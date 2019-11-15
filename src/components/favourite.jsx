@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from "@fortawesome/free-solid-svg-icons"
 import {Animated} from "react-animated-css";
 import './fetchImage.css'
-
+import NavbarFavourite from './navbarFavourite'
 
 class Favourite extends Component {
 
@@ -16,6 +16,7 @@ class Favourite extends Component {
         const { items } =  this.state
         return (
             <div>
+            <NavbarFavourite />
                 <div className="wrapper" >
                <div className="img-area" >
                 {items.map(item => 

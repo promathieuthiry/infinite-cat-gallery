@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import {Animated} from "react-animated-css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
+import { Button, Alert} from 'rsuite';
+
 
 import { configHeader } from '../helpers/header'
 import Header from './header'
@@ -32,13 +34,14 @@ class FetchImage extends Component {
                   <img className="image" src={item.url} alt="" key={item.id} />   
                   </Animated>
                   <div class="middle">
-                 <button className="text" onClick={() => this.saveFavourite(item.id, item.url)}>
-                 <FontAwesomeIcon icon={faHeart} /> Add favourites</button>
+                <button className="text" onClick={() => this.saveFavourite(item.id, item.url)}>
+                 <FontAwesomeIcon icon={faHeart} /> <b>Add favourite</b></button> 
                  </div>
                   </div>
                   )}
                </div>
-               {isLoading && <p>Loading</p>}
+               {isLoading && <Button appearance="link" loading>Link</Button>
+            }
             </div>
             </div>
         )
@@ -74,7 +77,8 @@ class FetchImage extends Component {
     }
     
    saveFavourite = (id, url) => {
-        localStorage.setItem(id, url);
+        localStorage.setItem(id, url)
+        Alert.success('Successfully added')
    }
 
 }

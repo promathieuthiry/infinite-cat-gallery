@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import {Animated} from "react-animated-css";
 
 import './header.css'
+import NavbarMenu from './navbar';
 
 function Header() {
     return (
         <div>
+        <NavbarMenu />
         <header className="masthead">
-        <Link to="favourite"><button className="buttonMenu">Favourites</button></Link>
         <div>
           <h1 >The infinite cat gallery</h1>
           <h3 >
