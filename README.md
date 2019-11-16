@@ -5,19 +5,24 @@
 
 
 
-##Infinite Cat Gallery
+# Infinite Cat Gallery
+
 An responsive web gallery displaying cat pictures from the [CatApi](https://thecatapi.com/). User can save pictures via local forage. 
 
 ## Table of contents
-- [Table of contents](#table-of-contents)
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Features](#features)
+
+- [Infinite Cat Gallery](#infinite-cat-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Technologies](#technologies)
+  - [Features](#features)
 
 ## General info
+
 This project has no more ambitious than practice and having fun.
-	
+
 ## Technologies
+
 Project is created with:
 
 * Create React App
@@ -27,7 +32,7 @@ Project is created with:
 * Airbnb eslint configuration
 * Deploy on github pages
 * Responsiveness via flexbox
-	
+
 ## Features
 
 * Display cat pictures
