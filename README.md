@@ -11,8 +11,6 @@ An responsive web gallery displaying cat pictures from the [CatApi](https://thec
 
 ## Table of contents
 
-- [Infinite Cat Gallery](#infinite-cat-gallery)
-  - [Table of contents](#table-of-contents)
   - [General info](#general-info)
   - [Technologies](#technologies)
   - [Features](#features)
