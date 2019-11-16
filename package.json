@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "bootstrap": "^4.3.1",
     "dotenv": "^8.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "gh-pages": "^2.1.1",
     "lodash.debounce": "^4.0.8",
     "react": "^16.11.0",
@@ -26,6 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -43,5 +45,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1"
   }
 }

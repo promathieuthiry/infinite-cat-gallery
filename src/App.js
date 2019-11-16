@@ -1,23 +1,22 @@
-import React from 'react';
+/* eslint-disable import/no-unresolved */
+import React from "react"
 import { HashRouter, Route } from "react-router-dom"
 
-import './App.css';
-import FetchImage from './components/fetchImage';
-import Favourite from './components/favourite';
+import "./App.css"
+import FetchImage from "./components/fetchImage"
+import Favourite from "./components/favourite"
 
-require('dotenv').config()
+require("dotenv").config()
 
 function App() {
   return (
     <div className="App">
-    <HashRouter basename="/">
-    <Route exact path='/' component={FetchImage} />
-    <Route exact path='/favourite' component={Favourite} /> 
-   </HashRouter> 
-  {/*<Favourite />
-  // <FetchImage /> */}
+      <HashRouter basename="/">
+        <Route exact path="/" component={FetchImage} />
+        <Route exact path="/favourite" component={Favourite} />
+      </HashRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
