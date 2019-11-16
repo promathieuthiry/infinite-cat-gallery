@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a32043272c54989b51cfb04855d13411",
+    "revision": "2bb91e8e9024d874cbf9e44f354570cc",
     "url": "https://promathieuthiry.github.io/infinite-cat-gallery/index.html"
   },
   {
